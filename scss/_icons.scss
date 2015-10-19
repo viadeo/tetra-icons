@@ -1,0 +1,37 @@
+$font-path: '../fonts/viadeoicons/' !default;
+$font-name: 'viadeoicons' !default;
+
+@font-face {
+    font-family: 'viadeoicons';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/viadeoicons/viadeoicons.eot');
+    src: url('../fonts/viadeoicons/viadeoicons.woff2') format('woff2'),
+         url('../fonts/viadeoicons/viadeoicons.woff') format('woff'),
+         url('../fonts/viadeoicons/viadeoicons.ttf') format('truetype'),
+         url('../fonts/viadeoicons/viadeoicons.eot?#iefix') format('embedded-opentype');
+}
+
+.vicon[class^="vicon-"],
+.vicon[class*=" vicon-"] {
+    display: inline-block;
+    font-family: 'viadeoicons';
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    text-transform: none;
+}
+
+$icons: (
+    antenna: '\EA01',
+    heart: '\EA02'
+);
+
+@each $name, $icon in $icons {
+    .vicon-#{$name}:before {
+        content: $icon;
+    }
+}

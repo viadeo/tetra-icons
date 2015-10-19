@@ -1,0 +1,51 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'viadeoicons';
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/viadeoicons/viadeoicons.eot");
+    src: url("../fonts/viadeoicons/viadeoicons.woff2") format("woff2"), url("../fonts/viadeoicons/viadeoicons.woff") format("woff"), url("../fonts/viadeoicons/viadeoicons.ttf") format("truetype"), url("../fonts/viadeoicons/viadeoicons.eot?#iefix") format("embedded-opentype");
+}
+
+.vicon[class^="vicon-"],
+.vicon[class*=" vicon-"] {
+    display: inline-block;
+    font-family: 'viadeoicons';
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    text-transform: none;
+}
+
+.vicon-antenna:before {
+    content: "";
+}
+
+.vicon-heart:before {
+    content: "";
+}
+
+body {
+    text-align: center;
+}
+
+div {
+    display: inline-block;
+    padding: 5rem;
+}
+
+.vicon {
+    color: #000;
+    font-size: 5rem;
+}
+
+.vicon-antenna {
+    color: #00f;
+}
+
+.vicon-heart {
+    color: #f00;
+}
