@@ -10,7 +10,7 @@
 .vicon[class^="vicon-"],
 .vicon[class*=" vicon-"] {
     display: inline-block;
-    font-family: 'viadeoicons';
+    font-family: "viadeoicons";
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-style: normal;

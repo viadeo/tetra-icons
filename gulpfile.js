@@ -8,7 +8,8 @@
 var gulp = require('gulp')
   , sass = require('gulp-sass')
   , iconfont = require('gulp-iconfont')
-  , consolidate = require('gulp-consolidate');
+  , consolidate = require('gulp-consolidate')
+  , runTimestamp = Math.round(Date.now()/1000);
 
 
 // -----------------------------------------------------------------------------
@@ -35,6 +36,12 @@ gulp.task('iconfont', function () {
 
     // Assigne un unicode à chaque icône pour les utiliser dans du CSS
     , appendUnicode: true
+
+    , timestamp: runTimestamp // recommended to get consistent builds when watching files
+
+    // If some font glyphs aren't converted properly you should append the normalize:true option and a fontHeight greater than 1000 (fontHeight: 1001).
+    // , fontHeight: 1001
+
     }))
 
     // Appel du module générant le CSS
@@ -92,7 +99,7 @@ gulp.task('sass', function () {
 // Default
 // -----------------------------------------------------------------------------
 
-gulp.task('default', ['sass'], function () {
+gulp.task('default', ['iconfont', 'sass'], function () {
 
   // Génération des fichiers CSS à chaque modification des fichiers SASS
   gulp.watch('scss/**/*.scss', ['sass']);

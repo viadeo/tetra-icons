@@ -5,17 +5,17 @@ $font-name: 'viadeoicons' !default;
     font-family: 'viadeoicons';
     font-weight: normal;
     font-style: normal;
-    src: url('../fonts/viadeoicons/viadeoicons.eot');
-    src: url('../fonts/viadeoicons/viadeoicons.woff2') format('woff2'),
-         url('../fonts/viadeoicons/viadeoicons.woff') format('woff'),
-         url('../fonts/viadeoicons/viadeoicons.ttf') format('truetype'),
-         url('../fonts/viadeoicons/viadeoicons.eot?#iefix') format('embedded-opentype');
+    src: url($font-path + $font-name + '.eot');
+    src: url($font-path + $font-name + '.woff2') format('woff2'),
+         url($font-path + $font-name + '.woff') format('woff'),
+         url($font-path + $font-name + '.ttf') format('truetype'),
+         url($font-path + $font-name + '.eot?#iefix') format('embedded-opentype');
 }
 
 .vicon[class^="vicon-"],
 .vicon[class*=" vicon-"] {
     display: inline-block;
-    font-family: 'viadeoicons';
+    font-family: $font-name;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-style: normal;
