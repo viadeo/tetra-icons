@@ -12,10 +12,17 @@
     "url": "https://github.com/viadeo/tetra-icons.git"
   },
   "devDependencies": {
+    "eslint": "~1.7.3",
     "gulp": "^3.9.0",
     "gulp-consolidate": "^0.1.2",
     "gulp-iconfont": "^3.0.2",
     "gulp-sass": "^2.0.2",
     "lodash": "^3.9.3"
+  },
+  "scripts": {
+    "lint": "eslint gulpfile.js",
+    "patch-release": "npm version patch && npm publish && git push --follow-tags",
+    "minor-release": "npm version minor && npm publish && git push --follow-tags",
+    "major-release": "npm version major && npm publish && git push --follow-tags"
   }
 }
