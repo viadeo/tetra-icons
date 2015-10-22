@@ -3,9 +3,7 @@ Create Tetra-ui web fonts from several SVG icons
 
 ## Preparing SVG's
 
-Beware that your SVG icons must have a high enough height. 500 is a minimum. If
- you do not want to resize them, you can try to combine the `fontHeight` and
- the `normalize` option to get them in a correct size.
+Beware that your SVG icons must have a high enough height. 500 is a minimum.
 
 ### Illustrator
 
