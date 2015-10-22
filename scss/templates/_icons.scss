@@ -32,6 +32,8 @@ $icons: (
     }).join(',\n    ') %>
 );
 
+
+
 @each $name, $icon in $icons {
     .<%= className %>-#{$name}:before {
         content: $icon;

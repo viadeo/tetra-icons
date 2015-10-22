@@ -49,25 +49,29 @@ gulp.task('iconfont', function () {
 
       // Localisation du template SASS
       gulp.src('scss/templates/_icons.scss')
-
         // Appel du moteur de template
         .pipe(consolidate('lodash', {
-
           // Code points présent dans la propriété CSS "content"
           glyphs: glyphs
-
           // Nom de la police
         , fontName: 'viadeoicons'
-
         // Chemin des fichiers de police
         , fontPath: '../fonts/viadeoicons/'
-
         // Nom de la classe principale, commune à tous les icônes
         , className: 'vicon'
         }))
-
         // Destination du fichier SASS qui sera ensuite générer en CSS
         .pipe(gulp.dest('scss'));
+
+        // Localisation du template SASS
+        gulp.src('./templates/*.html')
+          // Appel du moteur de template
+          .pipe(consolidate('lodash', {
+            glyphs: glyphs
+          , className: 'vicon'
+          }))
+          .pipe(gulp.dest('.'));
+
     })
 
     // Destination des fichiers de police
@@ -99,7 +103,7 @@ gulp.task('sass', function () {
 // Default
 // -----------------------------------------------------------------------------
 
-gulp.task('default', ['iconfont', 'sass'], function () {
+gulp.task('default', ['iconfont'], function () {
 
   // Génération des fichiers CSS à chaque modification des fichiers SASS
   gulp.watch('scss/**/*.scss', ['sass']);

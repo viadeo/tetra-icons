@@ -30,6 +30,8 @@ $icons: (
     heart: '\EA02'
 );
 
+
+
 @each $name, $icon in $icons {
     .vicon-#{$name}:before {
         content: $icon;
