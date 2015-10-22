@@ -1,12 +1,14 @@
 {
   "name": "tetra-icons",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Générer une police d'icône (iconfont) à partir de fichiers SVG.",
   "author": "Viadeo",
-  "contributors": [{
-    "name": "Antoine Duvillier",
-    "email": "aduvillier@viadeoteam.com"
-  }],
+  "contributors": [
+    {
+      "name": "Antoine Duvillier",
+      "email": "aduvillier@viadeoteam.com"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/viadeo/tetra-icons.git"
