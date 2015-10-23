@@ -1,6 +1,6 @@
 {
   "name": "tetra-icons",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Générer une police d'icône (iconfont) à partir de fichiers SVG.",
   "author": "Viadeo",
   "contributors": [
