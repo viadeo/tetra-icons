@@ -10,6 +10,10 @@ body {
   text-align: center;
 }
 
+.github-btn {
+  display: inline-block;
+}
+
 .header {
   text-align: center;
   margin: 0 0 1rem 0;
@@ -30,6 +34,11 @@ body {
       font-size: 1rem;
     }
   }
+}
+
+.footer {
+  margin: 1rem 0 0 0;
+  padding: 1rem 0 0 0;
 }
 
 .row {

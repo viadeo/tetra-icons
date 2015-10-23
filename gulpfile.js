@@ -111,4 +111,6 @@ gulp.task('default', ['iconfont'], function () {
 
   // Génération des fichiers CSS à chaque modification des fichiers SASS
   gulp.watch('scss/**/*.scss', ['sass']);
+  gulp.watch('icons/*.svg', ['iconfont']);
+  gulp.watch('templates/*.html', ['iconfont']);
 });
