@@ -1,6 +1,3 @@
-'use strict';
-
-
 // -----------------------------------------------------------------------------
 // Dépendances
 // -----------------------------------------------------------------------------
@@ -9,8 +6,8 @@ var gulp = require('gulp')
   , sass = require('gulp-sass')
   , iconfont = require('gulp-iconfont')
   , consolidate = require('gulp-consolidate')
+  , autoprefixer = require('gulp-autoprefixer')
   , runTimestamp = Math.round(Date.now()/1000);
-
 
 // -----------------------------------------------------------------------------
 // Iconfont
@@ -63,7 +60,7 @@ gulp.task('iconfont', function () {
         // Destination du fichier SASS qui sera ensuite générer en CSS
         .pipe(gulp.dest('scss'));
 
-        // Localisation du template SASS
+        // Localisation du template HTML
         gulp.src('./templates/*.html')
           // Appel du moteur de template
           .pipe(consolidate('lodash', {
@@ -85,16 +82,23 @@ gulp.task('iconfont', function () {
 
 gulp.task('sass', function () {
 
+  const AUTOPREFIXER_BROWSERS = [
+    'ie >= 9',
+    'ie_mob >= 10',
+    'last 2 Firefox versions',
+    'last 2 Chrome versions',
+    'last 5 Safari versions',
+    'last 5 Opera versions',
+    'ios >= 7',
+    'android >= 4.4',
+    'bb >= 10'
+  ];
+
   // Localisation des fichiers SASS
   gulp.src('scss/**/*.scss')
-
     // Exécution de SASS pour compilation
-    .pipe(sass({
-      indentWidth: 4
-    , outputStyle: 'expanded'
-    }))
-
-    // Destination des fichiers CSS
+    .pipe(sass({indentWidth: 2, outputStyle: 'expanded'}).on('error', sass.logError))
+    .pipe(autoprefixer(AUTOPREFIXER_BROWSERS))
     .pipe(gulp.dest('css'));
 });
 
