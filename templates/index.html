@@ -6,8 +6,17 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <% glyphs.forEach(function(item, key) { %>
-          <div><i class="<%- className %> <%- className %>-<%- item.name %>"></i></div>
-        <% }); %>
+        <header class='header'>
+          <h1 class='title'>Tetra icons</h1>
+          <div class='sub-title'>Viadeo icon fonts generated from several SVG icons</div>
+        </header>
+        <div class="row">
+          <% glyphs.forEach(function(item, key) { %>
+            <div class="column">
+              <i class="column__icon <%- className %> <%- className %>-<%- item.name %>"></i><br />
+              <span class="column__icon-className"><%- className %> <%- className %>-<%- item.name %></span>
+            </div>
+          <% }); %>
+        </div>
     </body>
 </html>

@@ -1,23 +1,66 @@
+@import 'normalize';
 @import 'icons';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+$mobile-breakpoint: 480px;
 
 body {
-    text-align: center;
+  font-family: "Open Sans","Helvetica Neue",Arial,Helvetica,sans-serif;
+  color: rgba(0, 0, 0, 0.87);
+  text-align: center;
 }
 
-div {
-    display: inline-block;
-    padding: 5rem;
+.header {
+  text-align: center;
+  margin: 0 0 1rem 0;
+  padding: 0 0 1rem 0;
+  border-bottom: 1px solid rgb(231, 231, 231);
+  .title {
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 0;
+    @media screen and (max-width: $mobile-breakpoint) {
+      font-size: 2.5rem;
+    }
+  }
+  .sub-title {
+    font-size: 1.2rem;
+    color: gray;
+    @media screen and (max-width: $mobile-breakpoint) {
+      font-size: 1rem;
+    }
+  }
 }
 
-.vicon {
-    color: #000;
-    font-size: 5rem;
+.row {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
 }
 
-.vicon-antenna {
-    color: #00f;
+.column {
+  // ie 10 hack
+  display: inline-block;
+  padding: 1rem;
 }
 
-.vicon-heart {
-    color: #f00;
+.column__icon {
+  $color: #4A4747;
+  font-size: 2.5rem;
+  color: $color;
+  transition: color 0.4s 0.1s, transform 0.3s 0.1s;
+  .column:hover & , .column:focus & {
+    color: darken($color, 20%);
+    transform: scale(1.3);
+  }
+}
+
+.column__icon-className {
+  $color: gray;
+  font-size: 0.9rem;
+  color: $color;
+  transition: color 0.4s 0.1s;
+  .column:hover & , .column:focus & {
+    color: darken($color, 20%);
+  }
 }
