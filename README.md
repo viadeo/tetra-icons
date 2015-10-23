@@ -1,4 +1,4 @@
-# [tetra-icons](http://viadeo.github.io/tetra-icons/)
+# [Tetra-icons](http://viadeo.github.io/tetra-icons/)
 Create Tetra-ui web fonts from several SVG icons
 
 ## Preparing SVG's
