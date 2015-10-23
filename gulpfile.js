@@ -3,6 +3,8 @@
 // -----------------------------------------------------------------------------
 
 var gulp = require('gulp')
+  , runSequence = require('run-sequence')
+  , del = require('del')
   , sass = require('gulp-sass')
   , iconfont = require('gulp-iconfont')
   , consolidate = require('gulp-consolidate')
@@ -16,36 +18,27 @@ var gulp = require('gulp')
 gulp.task('iconfont', function () {
 
   // Localisation des fichiers SVG
-  gulp.src('icons/**/*.svg')
-
+  gulp.src('lib/icons/**/*.svg')
     // Appel du module générant la police d'icône
     .pipe(iconfont({
-
-      // Nom de la police
-      fontName: 'viadeoicons'
-
-      // Calcule des dimensions du glyphe et centrage
+    // Nom de la police
+    fontName: 'viadeoicons'
+    // Calcule des dimensions du glyphe et centrage
     , centerHorizontally: true
-
     // Normalisation des icônes par mise à l'échelle
     // par rapport à la taille de l'icône la plus grande
     , normalize: true
-
     // Assigne un unicode à chaque icône pour les utiliser dans du CSS
     , appendUnicode: true
-
     , timestamp: runTimestamp // recommended to get consistent builds when watching files
-
     // If some font glyphs aren't converted properly you should append the normalize:true option and a fontHeight greater than 1000 (fontHeight: 1001).
     // , fontHeight: 1001
-
     }))
 
     // Appel du module générant le CSS
     .on('glyphs', function (glyphs) {
-
       // Localisation du template SASS
-      gulp.src('scss/templates/_icons.scss')
+      gulp.src('lib/scss/templates/_viadeoicons.scss')
         // Appel du moteur de template
         .pipe(consolidate('lodash', {
           // Code points présent dans la propriété CSS "content"
@@ -53,26 +46,27 @@ gulp.task('iconfont', function () {
           // Nom de la police
         , fontName: 'viadeoicons'
         // Chemin des fichiers de police
-        , fontPath: '../fonts/viadeoicons/'
+        , fontPath: '../fonts/'
         // Nom de la classe principale, commune à tous les icônes
         , className: 'vicon'
         }))
         // Destination du fichier SASS qui sera ensuite générer en CSS
-        .pipe(gulp.dest('scss'));
+        .pipe(gulp.dest('lib/scss'))
+        .pipe(gulp.dest('dist/scss'));;
 
         // Localisation du template HTML
-        gulp.src('./templates/*.html')
+        gulp.src('lib/templates/*.html')
           // Appel du moteur de template
           .pipe(consolidate('lodash', {
             glyphs: glyphs
           , className: 'vicon'
           }))
-          .pipe(gulp.dest('.'));
+          .pipe(gulp.dest('dist'));
 
     })
 
     // Destination des fichiers de police
-    .pipe(gulp.dest('fonts/viadeoicons'));
+    .pipe(gulp.dest('dist/fonts'));
 });
 
 
@@ -95,22 +89,33 @@ gulp.task('sass', function () {
   ];
 
   // Localisation des fichiers SASS
-  gulp.src('scss/**/*.scss')
+  gulp.src('lib/scss/**/*.scss')
     // Exécution de SASS pour compilation
     .pipe(sass({indentWidth: 2, outputStyle: 'expanded'}).on('error', sass.logError))
     .pipe(autoprefixer(AUTOPREFIXER_BROWSERS))
-    .pipe(gulp.dest('css'));
+    .pipe(gulp.dest('dist/css'));
 });
 
+gulp.task('clean', function () {
+  return del(['dist/*']);
+});
+
+gulp.task('watch', function (cb) {
+  // Watch files for changes & reload
+  gulp.watch('lib/scss/**/*.scss', ['sass']);
+  gulp.watch('lib/icons/*.svg', ['iconfont']);
+  gulp.watch('lib/templates/*.html', ['iconfont']);
+});
 
 // -----------------------------------------------------------------------------
 // Default
 // -----------------------------------------------------------------------------
 
-gulp.task('default', ['iconfont'], function () {
-
-  // Génération des fichiers CSS à chaque modification des fichiers SASS
-  gulp.watch('scss/**/*.scss', ['sass']);
-  gulp.watch('icons/*.svg', ['iconfont']);
-  gulp.watch('templates/*.html', ['iconfont']);
+gulp.task('default', function (cb) {
+  runSequence(
+    'clean',
+    'iconfont',
+    'watch',
+    cb
+  );
 });
