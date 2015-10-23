@@ -1,4 +1,4 @@
-# tetra-icons
+# [tetra-icons](http://viadeo.github.io/tetra-icons/)
 Create Tetra-ui web fonts from several SVG icons
 
 ## Preparing SVG's
@@ -25,6 +25,7 @@ Leave the rest unchecked.
 
 All new `.svg` icon must be inside the `icons` folder with the file name pattern `iconname.svg`.
 
-- Generate webFont via the cmd : `npm run generate-icon`
-- Check the webFont `open index.html`
-
+1. Generate webFont via the cmd : `npm run generate-icon`
+2. Check the webFont `open dist/index.html`
+3. Push to the master `git commit -am "Update tetra-icon" && git push`
+4. Deploy to gh-pages `git subtree push --prefix dist origin gh-pages`
