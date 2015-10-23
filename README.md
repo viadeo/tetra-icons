@@ -29,4 +29,4 @@ All new `.svg` icon must be inside the `icons` folder with the file name pattern
 2. Check the webFont `open dist/index.html`
 3. Push to the master `git commit -am "Update tetra-icon" && git push`
 4. Release `npm run minor-release`
-5. Deploy to gh-pages `git subtree push --prefix dist origin gh-pages`
+5. Deploy to gh-pages `npm run deploy`
