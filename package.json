@@ -24,7 +24,7 @@
     "lodash": "^3.9.3"
   },
   "scripts": {
-    "generate-icon": "gulp iconfont && gulp sass",
+    "generate-icon": "gulp default",
     "lint": "eslint gulpfile.js",
     "patch-release": "npm version patch && npm publish && git push --follow-tags",
     "minor-release": "npm version minor && npm publish && git push --follow-tags",
