@@ -422,7 +422,7 @@ th {
 body {
   font-family: "Open Sans","Helvetica Neue",Arial,Helvetica,sans-serif;
   color: rgba(0, 0, 0, 0.87);
-  text-align: center;
+  background: #fff;
 }
 
 .github-btn {
@@ -430,9 +430,10 @@ body {
 }
 
 .header {
-  text-align: center;
-  margin: 0 0 1rem 0;
-  padding: 0 0 1rem 0;
+  background: #253a4c;
+  color: #fff;
+  text-align: left;
+  padding: 1rem;
   border-bottom: 1px solid #e7e7e7;
 }
 
@@ -440,6 +441,16 @@ body {
   font-weight: 600;
   font-size: 3rem;
   margin: 0;
+  font-weight: 300;
+}
+
+.header .title span {
+  font-weight: 400;
+  color: #EF830E;
+  background: -webkit-linear-gradient(150deg, #EF4C0E 0%, #EF830E 50%, #EFBF0E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -449,8 +460,9 @@ body {
 }
 
 .header .sub-title {
-  font-size: 1.2rem;
-  color: gray;
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: 300;
 }
 
 @media screen and (max-width: 480px) {
@@ -460,25 +472,28 @@ body {
 }
 
 .footer {
-  margin: 1rem 0 0 0;
-  padding: 1rem 0 0 0;
+  padding: 1rem;
 }
 
 .row {
+  min-height: 390px;
+  background: #e0e2e4;
+  padding: 1rem;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-flow: row wrap;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-justify-content: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
 .column {
   display: inline-block;
   padding: 1rem;
+  text-align: center;
 }
 
 .column__icon {
