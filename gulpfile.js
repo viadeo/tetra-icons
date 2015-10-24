@@ -11,6 +11,27 @@ var gulp = require('gulp')
   , autoprefixer = require('gulp-autoprefixer')
   , runTimestamp = Math.round(Date.now()/1000);
 
+const FONT = {
+  name: 'viadeoicons',
+  className: 'vicon',
+  path: '../fonts/'
+};
+
+const LIB = {
+  root: 'lib/',
+  svg: 'lib/icons/**/*.svg',
+  scss: 'lib/scss/**/*.scss',
+  html: 'lib/templates/*.html'
+};
+
+const DIST = {
+  root: 'dist/',
+  fonts: 'dist/fonts',
+  css: 'dist/css',
+  scss: 'dist/scss',
+  html: 'dist'
+};
+
 // -----------------------------------------------------------------------------
 // Iconfont
 // -----------------------------------------------------------------------------
@@ -18,11 +39,11 @@ var gulp = require('gulp')
 gulp.task('iconfont', function () {
 
   // Localisation des fichiers SVG
-  gulp.src('lib/icons/**/*.svg')
+  gulp.src(LIB.svg)
     // Appel du module générant la police d'icône
     .pipe(iconfont({
     // Nom de la police
-    fontName: 'viadeoicons'
+    fontName: FONT.name
     // Calcule des dimensions du glyphe et centrage
     , centerHorizontally: true
     // Normalisation des icônes par mise à l'échelle
@@ -44,29 +65,29 @@ gulp.task('iconfont', function () {
           // Code points présent dans la propriété CSS "content"
           glyphs: glyphs
           // Nom de la police
-        , fontName: 'viadeoicons'
+        , fontName: FONT.name
         // Chemin des fichiers de police
-        , fontPath: '../fonts/'
+        , fontPath: FONT.path
         // Nom de la classe principale, commune à tous les icônes
-        , className: 'vicon'
+        , className: FONT.className
         }))
         // Destination du fichier SASS qui sera ensuite générer en CSS
-        .pipe(gulp.dest('lib/scss'))
-        .pipe(gulp.dest('dist/scss'));;
+        .pipe(gulp.dest(LIB.root+'scss'))
+        .pipe(gulp.dest(DIST.scss));
 
         // Localisation du template HTML
-        gulp.src('lib/templates/*.html')
+        gulp.src(LIB.html)
           // Appel du moteur de template
           .pipe(consolidate('lodash', {
             glyphs: glyphs
-          , className: 'vicon'
+          , className: FONT.className
           }))
-          .pipe(gulp.dest('dist'));
+          .pipe(gulp.dest(DIST.root));
 
     })
 
     // Destination des fichiers de police
-    .pipe(gulp.dest('dist/fonts'));
+    .pipe(gulp.dest(DIST.fonts));
 });
 
 
@@ -89,22 +110,21 @@ gulp.task('sass', function () {
   ];
 
   // Localisation des fichiers SASS
-  gulp.src('lib/scss/**/*.scss')
+  gulp.src(LIB.scss)
     // Exécution de SASS pour compilation
     .pipe(sass({indentWidth: 2, outputStyle: 'expanded'}).on('error', sass.logError))
     .pipe(autoprefixer(AUTOPREFIXER_BROWSERS))
-    .pipe(gulp.dest('dist/css'));
+    .pipe(gulp.dest(DIST.css));
 });
 
 gulp.task('clean', function () {
-  return del(['dist/*']);
+  return del([DIST.root+'*']);
 });
 
 gulp.task('watch', function (cb) {
   // Watch files for changes & reload
-  gulp.watch('lib/scss/**/*.scss', ['sass']);
-  gulp.watch('lib/icons/*.svg', ['iconfont']);
-  gulp.watch('lib/templates/*.html', ['iconfont']);
+  gulp.watch(LIB.scss, ['sass']);
+  gulp.watch([LIB.svg, LIB.html], ['iconfont']);
 });
 
 // -----------------------------------------------------------------------------
