@@ -7,17 +7,17 @@
     </head>
     <body>
         <header class='header'>
-          <h1 class='title'>Tetra icons</h1>
+          <h1 class='title'>Tetra <span>icons</span></h1>
           <div class='sub-title'>Viadeo icon fonts generated from several SVG icons</div>
         </header>
-        <div class="row">
+        <main class="row">
           <% glyphs.forEach(function(item, key) { %>
             <div class="column">
               <i class="column__icon <%- className %> <%- className %>-<%- item.name %>"></i><br />
               <span class="column__icon-className"><%- className %> <%- className %>-<%- item.name %></span>
             </div>
           <% }); %>
-        </div>
+        </main>
         <footer class='footer'>
           <iframe class="github-btn" src="https://ghbtns.com/github-btn.html?user=viadeo&repo=tetra-icons&type=watch&count=true&v=2"
           frameborder="0" scrolling="0" width="90px" height="20px" title="Watch on GitHub"></iframe>
