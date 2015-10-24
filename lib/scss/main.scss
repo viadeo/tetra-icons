@@ -35,7 +35,7 @@ body {
 
     }
     @media screen and (max-width: $mobile-breakpoint) {
-      font-size: 2.5rem;
+      font-size: 2.7rem;
     }
   }
   .sub-title {
@@ -53,12 +53,15 @@ body {
 }
 
 .row {
-  min-height: 390px;
   background: #e0e2e4;
   padding: 1rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: left;
+  align-items: center;
+  @media screen and (max-width: $mobile-breakpoint) {
+    justify-content: space-around;
+  }
 }
 
 .column {

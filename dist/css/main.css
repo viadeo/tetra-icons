@@ -455,7 +455,7 @@ body {
 
 @media screen and (max-width: 480px) {
   .header .title {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
   }
 }
 
@@ -476,7 +476,6 @@ body {
 }
 
 .row {
-  min-height: 390px;
   background: #e0e2e4;
   padding: 1rem;
   display: -webkit-flex;
@@ -488,6 +487,17 @@ body {
   -webkit-justify-content: left;
       -ms-flex-pack: left;
           justify-content: left;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  .row {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
 }
 
 .column {
