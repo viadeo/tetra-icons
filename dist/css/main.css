@@ -571,11 +571,11 @@ th {
   content: "";
 }
 
-.vicon-forum:before {
+.vicon-blog:before {
   content: "";
 }
 
-.vicon-gplus:before {
+.vicon-googleplus:before {
   content: "";
 }
 
@@ -607,7 +607,7 @@ th {
   content: "";
 }
 
-.vicon-lets-meet:before {
+.vicon-infinity:before {
   content: "";
 }
 
@@ -623,7 +623,7 @@ th {
   content: "";
 }
 
-.vicon-mail:before {
+.vicon-message:before {
   content: "";
 }
 
