@@ -415,7 +415,7 @@ th {
   text-transform: none;
 }
 
-.vicon-alert-notif:before {
+.vicon-notification:before {
   content: "";
 }
 
@@ -797,6 +797,10 @@ th {
 
 .vicon-plus-alt:before {
   content: "";
+}
+
+.vicon-notification-alt:before {
+  content: "";
 }
 
 body {
