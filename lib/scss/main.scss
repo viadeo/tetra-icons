@@ -68,12 +68,15 @@ body {
   // ie 10 hack
   display: inline-block;
   padding: 1rem;
+  margin: 1rem;
   text-align: center;
+  background: #fff;
+  width: 9rem;
 }
 
 .column__icon {
   $color: #4A4747;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color: $color;
   transition: color 0.4s 0.1s, transform 0.3s 0.1s;
   .column:hover & , .column:focus & {

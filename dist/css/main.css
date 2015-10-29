@@ -415,8 +415,384 @@ th {
   text-transform: none;
 }
 
-.vicon-bubble:before {
+.vicon-alert-notif:before {
+  content: "";
+}
+
+.vicon-archive:before {
+  content: "";
+}
+
+.vicon-arrow-down-alt:before {
   content: "";
+}
+
+.vicon-arrow-down:before {
+  content: "";
+}
+
+.vicon-arrow-first:before {
+  content: "";
+}
+
+.vicon-arrow-last:before {
+  content: "";
+}
+
+.vicon-arrow-left-alt:before {
+  content: "";
+}
+
+.vicon-arrow-left:before {
+  content: "";
+}
+
+.vicon-arrow-right-alt:before {
+  content: "";
+}
+
+.vicon-arrow-right:before {
+  content: "";
+}
+
+.vicon-arrow-select:before {
+  content: "";
+}
+
+.vicon-arrow-up-alt:before {
+  content: "";
+}
+
+.vicon-arrow-up:before {
+  content: "";
+}
+
+.vicon-article:before {
+  content: "";
+}
+
+.vicon-book:before {
+  content: "";
+}
+
+.vicon-bubble:before {
+  content: "";
+}
+
+.vicon-bubbles:before {
+  content: "";
+}
+
+.vicon-calendar-1:before {
+  content: "";
+}
+
+.vicon-calendar-30:before {
+  content: "";
+}
+
+.vicon-calendar:before {
+  content: "";
+}
+
+.vicon-check:before {
+  content: "";
+}
+
+.vicon-close:before {
+  content: "";
+}
+
+.vicon-company-add:before {
+  content: "";
+}
+
+.vicon-company:before {
+  content: "";
+}
+
+.vicon-contract:before {
+  content: "";
+}
+
+.vicon-data:before {
+  content: "";
+}
+
+.vicon-degree-like:before {
+  content: "";
+}
+
+.vicon-degree-ok:before {
+  content: "";
+}
+
+.vicon-degree:before {
+  content: "";
+}
+
+.vicon-device-computer:before {
+  content: "";
+}
+
+.vicon-device-phone:before {
+  content: "";
+}
+
+.vicon-device-tablette:before {
+  content: "";
+}
+
+.vicon-download:before {
+  content: "";
+}
+
+.vicon-edit:before {
+  content: "";
+}
+
+.vicon-euro:before {
+  content: "";
+}
+
+.vicon-export:before {
+  content: "";
+}
+
+.vicon-facebook:before {
+  content: "";
+}
+
+.vicon-female-1:before {
+  content: "";
+}
+
+.vicon-female-2:before {
+  content: "";
+}
+
+.vicon-forum:before {
+  content: "";
+}
+
+.vicon-gplus:before {
+  content: "";
+}
+
+.vicon-graph:before {
+  content: "";
+}
+
+.vicon-group:before {
+  content: "";
+}
+
+.vicon-home:before {
+  content: "";
+}
+
+.vicon-idea:before {
+  content: "";
+}
+
+.vicon-information:before {
+  content: "";
+}
+
+.vicon-job:before {
+  content: "";
+}
+
+.vicon-key:before {
+  content: "";
+}
+
+.vicon-lets-meet:before {
+  content: "";
+}
+
+.vicon-like:before {
+  content: "";
+}
+
+.vicon-link:before {
+  content: "";
+}
+
+.vicon-location:before {
+  content: "";
+}
+
+.vicon-mail:before {
+  content: "";
+}
+
+.vicon-male-1:before {
+  content: "";
+}
+
+.vicon-male-2:before {
+  content: "";
+}
+
+.vicon-money:before {
+  content: "";
+}
+
+.vicon-network:before {
+  content: "";
+}
+
+.vicon-notification:before {
+  content: "";
+}
+
+.vicon-phone:before {
+  content: "";
+}
+
+.vicon-photo:before {
+  content: "";
+}
+
+.vicon-plus:before {
+  content: "";
+}
+
+.vicon-premium:before {
+  content: "";
+}
+
+.vicon-print:before {
+  content: "";
+}
+
+.vicon-profil:before {
+  content: "";
+}
+
+.vicon-recommand:before {
+  content: "";
+}
+
+.vicon-reload:before {
+  content: "";
+}
+
+.vicon-request-add:before {
+  content: "";
+}
+
+.vicon-request-delete:before {
+  content: "";
+}
+
+.vicon-request-ok:before {
+  content: "";
+}
+
+.vicon-request:before {
+  content: "";
+}
+
+.vicon-save:before {
+  content: "";
+}
+
+.vicon-saved:before {
+  content: "";
+}
+
+.vicon-search-plus:before {
+  content: "";
+}
+
+.vicon-search-catalog:before {
+  content: "";
+}
+
+.vicon-search:before {
+  content: "";
+}
+
+.vicon-settings:before {
+  content: "";
+}
+
+.vicon-share:before {
+  content: "";
+}
+
+.vicon-speech:before {
+  content: "";
+}
+
+.vicon-star:before {
+  content: "";
+}
+
+.vicon-stats:before {
+  content: "";
+}
+
+.vicon-study:before {
+  content: "";
+}
+
+.vicon-tag:before {
+  content: "";
+}
+
+.vicon-target:before {
+  content: "";
+}
+
+.vicon-tianji:before {
+  content: "";
+}
+
+.vicon-tie:before {
+  content: "";
+}
+
+.vicon-time:before {
+  content: "";
+}
+
+.vicon-tools:before {
+  content: "";
+}
+
+.vicon-trust:before {
+  content: "";
+}
+
+.vicon-twitter:before {
+  content: "";
+}
+
+.vicon-upload:before {
+  content: "";
+}
+
+.vicon-viadeo:before {
+  content: "";
+}
+
+.vicon-video:before {
+  content: "";
+}
+
+.vicon-visibility:before {
+  content: "";
+}
+
+.vicon-visit:before {
+  content: "";
+}
+
+.vicon-warning:before {
+  content: "";
 }
 
 body {
@@ -503,11 +879,14 @@ body {
 .column {
   display: inline-block;
   padding: 1rem;
+  margin: 1rem;
   text-align: center;
+  background: #fff;
+  width: 9rem;
 }
 
 .column__icon {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color: #4A4747;
   transition: color 0.4s 0.1s, -webkit-transform 0.3s 0.1s;
   transition: color 0.4s 0.1s, transform 0.3s 0.1s;
