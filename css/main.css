@@ -423,35 +423,35 @@ th {
   content: "";
 }
 
-.vicon-arrow-down-alt:before {
+.vicon-down-alt:before {
   content: "";
 }
 
-.vicon-arrow-down:before {
+.vicon-down:before {
   content: "";
 }
 
-.vicon-arrow-first:before {
+.vicon-first:before {
   content: "";
 }
 
-.vicon-arrow-last:before {
+.vicon-last:before {
   content: "";
 }
 
-.vicon-arrow-left-alt:before {
+.vicon-left-alt:before {
   content: "";
 }
 
-.vicon-arrow-left:before {
+.vicon-prev:before {
   content: "";
 }
 
-.vicon-arrow-right-alt:before {
+.vicon-right-alt:before {
   content: "";
 }
 
-.vicon-arrow-right:before {
+.vicon-next:before {
   content: "";
 }
 
@@ -459,11 +459,11 @@ th {
   content: "";
 }
 
-.vicon-arrow-up-alt:before {
+.vicon-up-alt:before {
   content: "";
 }
 
-.vicon-arrow-up:before {
+.vicon-up:before {
   content: "";
 }
 
@@ -495,11 +495,11 @@ th {
   content: "";
 }
 
-.vicon-check:before {
+.vicon-checkmark:before {
   content: "";
 }
 
-.vicon-close:before {
+.vicon-remove:before {
   content: "";
 }
 
@@ -591,7 +591,7 @@ th {
   content: "";
 }
 
-.vicon-idea:before {
+.vicon-bulb:before {
   content: "";
 }
 
@@ -599,7 +599,7 @@ th {
   content: "";
 }
 
-.vicon-job:before {
+.vicon-experience:before {
   content: "";
 }
 
@@ -731,11 +731,11 @@ th {
   content: "";
 }
 
-.vicon-stats:before {
+.vicon-stream:before {
   content: "";
 }
 
-.vicon-study:before {
+.vicon-school:before {
   content: "";
 }
 
@@ -779,7 +779,7 @@ th {
   content: "";
 }
 
-.vicon-video:before {
+.vicon-media:before {
   content: "";
 }
 
