@@ -11,7 +11,7 @@
           <div class='sub-title'>Viadeo icon fonts generated from several SVG icons</div>
         </header>
         <main class="row">
-          <% glyphs.forEach(function(item, key) { %>
+          <% _.sortByAll(glyphs, 'name').forEach(function(item, key) { %>
             <div class="column">
               <i class="column__icon <%- className %> <%- className %>-<%- item.name %>"></i><br />
               <span class="column__icon-className"><%- className %><br /> <%- className %>-<%- item.name %></span>
