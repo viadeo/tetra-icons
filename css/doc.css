@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -416,391 +415,391 @@ th {
 }
 
 .vicon-notification:before {
-  content: "";
+  content: "\EA01";
 }
 
 .vicon-archive:before {
-  content: "";
+  content: "\EA02";
 }
 
 .vicon-down-alt:before {
-  content: "";
+  content: "\EA03";
 }
 
 .vicon-down:before {
-  content: "";
+  content: "\EA04";
 }
 
 .vicon-first:before {
-  content: "";
+  content: "\EA05";
 }
 
 .vicon-last:before {
-  content: "";
+  content: "\EA06";
 }
 
 .vicon-left-alt:before {
-  content: "";
+  content: "\EA07";
 }
 
 .vicon-prev:before {
-  content: "";
+  content: "\EA08";
 }
 
 .vicon-right-alt:before {
-  content: "";
+  content: "\EA09";
 }
 
 .vicon-next:before {
-  content: "";
+  content: "\EA0A";
 }
 
 .vicon-select:before {
-  content: "";
+  content: "\EA0B";
 }
 
 .vicon-up-alt:before {
-  content: "";
+  content: "\EA0C";
 }
 
 .vicon-up:before {
-  content: "";
+  content: "\EA0D";
 }
 
 .vicon-article:before {
-  content: "";
+  content: "\EA0E";
 }
 
 .vicon-book:before {
-  content: "";
+  content: "\EA0F";
 }
 
 .vicon-bubble:before {
-  content: "";
+  content: "\EA10";
 }
 
 .vicon-bubbles:before {
-  content: "";
+  content: "\EA11";
 }
 
 .vicon-calendar-1:before {
-  content: "";
+  content: "\EA12";
 }
 
 .vicon-calendar-30:before {
-  content: "";
+  content: "\EA13";
 }
 
 .vicon-calendar:before {
-  content: "";
+  content: "\EA14";
 }
 
 .vicon-checkmark:before {
-  content: "";
+  content: "\EA15";
 }
 
 .vicon-remove:before {
-  content: "";
+  content: "\EA16";
 }
 
 .vicon-company-add:before {
-  content: "";
+  content: "\EA17";
 }
 
 .vicon-company:before {
-  content: "";
+  content: "\EA18";
 }
 
 .vicon-contract:before {
-  content: "";
+  content: "\EA19";
 }
 
 .vicon-data:before {
-  content: "";
+  content: "\EA1A";
 }
 
 .vicon-degree-like:before {
-  content: "";
+  content: "\EA1B";
 }
 
 .vicon-degree-ok:before {
-  content: "";
+  content: "\EA1C";
 }
 
 .vicon-degree:before {
-  content: "";
+  content: "\EA1D";
 }
 
 .vicon-device-computer:before {
-  content: "";
+  content: "\EA1E";
 }
 
 .vicon-device-phone:before {
-  content: "";
+  content: "\EA1F";
 }
 
 .vicon-device-tablette:before {
-  content: "";
+  content: "\EA20";
 }
 
 .vicon-download:before {
-  content: "";
+  content: "\EA21";
 }
 
 .vicon-edit:before {
-  content: "";
+  content: "\EA22";
 }
 
 .vicon-euro:before {
-  content: "";
+  content: "\EA23";
 }
 
 .vicon-export:before {
-  content: "";
+  content: "\EA24";
 }
 
 .vicon-facebook:before {
-  content: "";
+  content: "\EA25";
 }
 
 .vicon-female-1:before {
-  content: "";
+  content: "\EA26";
 }
 
 .vicon-female-2:before {
-  content: "";
+  content: "\EA27";
 }
 
 .vicon-blog:before {
-  content: "";
+  content: "\EA28";
 }
 
 .vicon-googleplus:before {
-  content: "";
+  content: "\EA29";
 }
 
 .vicon-graph:before {
-  content: "";
+  content: "\EA2A";
 }
 
 .vicon-group:before {
-  content: "";
+  content: "\EA2B";
 }
 
 .vicon-home:before {
-  content: "";
+  content: "\EA2C";
 }
 
 .vicon-bulb:before {
-  content: "";
+  content: "\EA2D";
 }
 
 .vicon-information:before {
-  content: "";
+  content: "\EA2E";
 }
 
 .vicon-experience:before {
-  content: "";
+  content: "\EA2F";
 }
 
 .vicon-key:before {
-  content: "";
+  content: "\EA30";
 }
 
 .vicon-infinity:before {
-  content: "";
+  content: "\EA31";
 }
 
 .vicon-like:before {
-  content: "";
+  content: "\EA32";
 }
 
 .vicon-link:before {
-  content: "";
+  content: "\EA33";
 }
 
 .vicon-location:before {
-  content: "";
+  content: "\EA34";
 }
 
 .vicon-message:before {
-  content: "";
+  content: "\EA35";
 }
 
 .vicon-male-1:before {
-  content: "";
+  content: "\EA36";
 }
 
 .vicon-male-2:before {
-  content: "";
+  content: "\EA37";
 }
 
 .vicon-money:before {
-  content: "";
+  content: "\EA38";
 }
 
 .vicon-network:before {
-  content: "";
+  content: "\EA39";
 }
 
 .vicon-bell:before {
-  content: "";
+  content: "\EA3A";
 }
 
 .vicon-phone:before {
-  content: "";
+  content: "\EA3B";
 }
 
 .vicon-photo:before {
-  content: "";
+  content: "\EA3C";
 }
 
 .vicon-plus:before {
-  content: "";
+  content: "\EA3D";
 }
 
 .vicon-premium:before {
-  content: "";
+  content: "\EA3E";
 }
 
 .vicon-print:before {
-  content: "";
+  content: "\EA3F";
 }
 
 .vicon-profil:before {
-  content: "";
+  content: "\EA40";
 }
 
 .vicon-recommand:before {
-  content: "";
+  content: "\EA41";
 }
 
 .vicon-reload:before {
-  content: "";
+  content: "\EA42";
 }
 
 .vicon-request-add:before {
-  content: "";
+  content: "\EA43";
 }
 
 .vicon-request-delete:before {
-  content: "";
+  content: "\EA44";
 }
 
 .vicon-request-ok:before {
-  content: "";
+  content: "\EA45";
 }
 
 .vicon-request:before {
-  content: "";
+  content: "\EA46";
 }
 
 .vicon-save:before {
-  content: "";
+  content: "\EA47";
 }
 
 .vicon-saved:before {
-  content: "";
+  content: "\EA48";
 }
 
 .vicon-search-plus:before {
-  content: "";
+  content: "\EA49";
 }
 
 .vicon-search-catalog:before {
-  content: "";
+  content: "\EA4A";
 }
 
 .vicon-search:before {
-  content: "";
+  content: "\EA4B";
 }
 
 .vicon-settings:before {
-  content: "";
+  content: "\EA4C";
 }
 
 .vicon-share:before {
-  content: "";
+  content: "\EA4D";
 }
 
 .vicon-speech:before {
-  content: "";
+  content: "\EA4E";
 }
 
 .vicon-star:before {
-  content: "";
+  content: "\EA4F";
 }
 
 .vicon-stream:before {
-  content: "";
+  content: "\EA50";
 }
 
 .vicon-school:before {
-  content: "";
+  content: "\EA51";
 }
 
 .vicon-tag:before {
-  content: "";
+  content: "\EA52";
 }
 
 .vicon-target:before {
-  content: "";
+  content: "\EA53";
 }
 
 .vicon-tianji:before {
-  content: "";
+  content: "\EA54";
 }
 
 .vicon-tie:before {
-  content: "";
+  content: "\EA55";
 }
 
 .vicon-time:before {
-  content: "";
+  content: "\EA56";
 }
 
 .vicon-tools:before {
-  content: "";
+  content: "\EA57";
 }
 
 .vicon-trust:before {
-  content: "";
+  content: "\EA58";
 }
 
 .vicon-twitter:before {
-  content: "";
+  content: "\EA59";
 }
 
 .vicon-upload:before {
-  content: "";
+  content: "\EA5A";
 }
 
 .vicon-viadeo:before {
-  content: "";
+  content: "\EA5B";
 }
 
 .vicon-media:before {
-  content: "";
+  content: "\EA5C";
 }
 
 .vicon-visibility:before {
-  content: "";
+  content: "\EA5D";
 }
 
 .vicon-visit:before {
-  content: "";
+  content: "\EA5E";
 }
 
 .vicon-warning:before {
-  content: "";
+  content: "\EA5F";
 }
 
 .vicon-plus-alt:before {
-  content: "";
+  content: "\EA60";
 }
 
 .vicon-notification-alt:before {
-  content: "";
+  content: "\EA61";
 }
 
 body {
