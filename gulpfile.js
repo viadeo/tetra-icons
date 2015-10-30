@@ -21,6 +21,7 @@ const LIB = {
   root: 'lib/',
   svg: 'lib/icons/**/*.svg',
   scss: 'lib/scss/**/*.scss',
+  less: 'lib/scss/**/*.less',
   html: 'lib/templates/*.html'
 };
 
@@ -29,6 +30,7 @@ const DIST = {
   fonts: 'dist/fonts',
   css: 'dist/css',
   scss: 'dist/scss',
+  less: 'dist/less',
   html: 'dist'
 };
 
@@ -55,10 +57,14 @@ gulp.task('iconfont', function () {
         , fontPath: FONT.path
         , className: FONT.className
       };
-      gulp.src('lib/scss/templates/_'+FONT.name+'.scss')
+      gulp.src('lib/scss/templates/*.scss')
         .pipe(consolidate('lodash', templateParams))
         .pipe(gulp.dest(LIB.root+'scss'))
         .pipe(gulp.dest(DIST.scss));
+
+        gulp.src('lib/less/templates/*.less')
+          .pipe(consolidate('lodash', templateParams))
+          .pipe(gulp.dest(DIST.less));
 
       gulp.src(LIB.html)
         .pipe(consolidate('lodash', templateParams))

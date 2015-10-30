@@ -1,0 +1,31 @@
+@font-path: '<%= fontPath %>';
+@font-name: '<%= fontName %>';
+
+@font-face {
+    font-family: '<%= fontName %>';
+    font-weight: normal;
+    font-style: normal;
+    src: url('@{font-path}@{font-name}.eot');
+    src: url('@{font-path}@{font-name}.woff2') format('woff2'),
+         url('@{font-path}@{font-name}.woff') format('woff'),
+         url('@{font-path}@{font-name}.ttf') format('truetype'),
+         url('@{font-path}@{font-name}.eot?#iefix') format('embedded-opentype');
+}
+
+.<%= className %>[class^="<%= className %>-"],
+.<%= className %>[class*=" <%= className %>-"] {
+    display: inline-block;
+    font-family: @font-name;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    text-transform: none;
+}
+
+<%= glyphs.map(function(glyph) {
+    return '.'+className+'-'+glyph.name+':before { content: "' + '\\' +glyph.unicode[0].charCodeAt(0)
+      .toString(16).toUpperCase() + '";}\n'
+}).join('') %>

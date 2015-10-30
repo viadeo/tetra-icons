@@ -25,7 +25,106 @@ $font-name: 'viadeoicons' !default;
     text-transform: none;
 }
 
-$icons: (
+.vicon-notification:before { content: "\EA01";}
+.vicon-archive:before { content: "\EA02";}
+.vicon-down-alt:before { content: "\EA03";}
+.vicon-down:before { content: "\EA04";}
+.vicon-first:before { content: "\EA05";}
+.vicon-last:before { content: "\EA06";}
+.vicon-left-alt:before { content: "\EA07";}
+.vicon-prev:before { content: "\EA08";}
+.vicon-right-alt:before { content: "\EA09";}
+.vicon-next:before { content: "\EA0A";}
+.vicon-select:before { content: "\EA0B";}
+.vicon-up-alt:before { content: "\EA0C";}
+.vicon-up:before { content: "\EA0D";}
+.vicon-article:before { content: "\EA0E";}
+.vicon-book:before { content: "\EA0F";}
+.vicon-bubble:before { content: "\EA10";}
+.vicon-bubbles:before { content: "\EA11";}
+.vicon-calendar-1:before { content: "\EA12";}
+.vicon-calendar-30:before { content: "\EA13";}
+.vicon-calendar:before { content: "\EA14";}
+.vicon-checkmark:before { content: "\EA15";}
+.vicon-remove:before { content: "\EA16";}
+.vicon-company-add:before { content: "\EA17";}
+.vicon-company:before { content: "\EA18";}
+.vicon-contract:before { content: "\EA19";}
+.vicon-data:before { content: "\EA1A";}
+.vicon-degree-like:before { content: "\EA1B";}
+.vicon-degree-ok:before { content: "\EA1C";}
+.vicon-degree:before { content: "\EA1D";}
+.vicon-device-computer:before { content: "\EA1E";}
+.vicon-device-phone:before { content: "\EA1F";}
+.vicon-device-tablette:before { content: "\EA20";}
+.vicon-download:before { content: "\EA21";}
+.vicon-edit:before { content: "\EA22";}
+.vicon-euro:before { content: "\EA23";}
+.vicon-export:before { content: "\EA24";}
+.vicon-facebook:before { content: "\EA25";}
+.vicon-female-1:before { content: "\EA26";}
+.vicon-female-2:before { content: "\EA27";}
+.vicon-blog:before { content: "\EA28";}
+.vicon-googleplus:before { content: "\EA29";}
+.vicon-graph:before { content: "\EA2A";}
+.vicon-group:before { content: "\EA2B";}
+.vicon-home:before { content: "\EA2C";}
+.vicon-bulb:before { content: "\EA2D";}
+.vicon-information:before { content: "\EA2E";}
+.vicon-experience:before { content: "\EA2F";}
+.vicon-key:before { content: "\EA30";}
+.vicon-infinity:before { content: "\EA31";}
+.vicon-like:before { content: "\EA32";}
+.vicon-link:before { content: "\EA33";}
+.vicon-location:before { content: "\EA34";}
+.vicon-message:before { content: "\EA35";}
+.vicon-male-1:before { content: "\EA36";}
+.vicon-male-2:before { content: "\EA37";}
+.vicon-money:before { content: "\EA38";}
+.vicon-network:before { content: "\EA39";}
+.vicon-bell:before { content: "\EA3A";}
+.vicon-phone:before { content: "\EA3B";}
+.vicon-photo:before { content: "\EA3C";}
+.vicon-plus:before { content: "\EA3D";}
+.vicon-premium:before { content: "\EA3E";}
+.vicon-print:before { content: "\EA3F";}
+.vicon-profil:before { content: "\EA40";}
+.vicon-recommand:before { content: "\EA41";}
+.vicon-reload:before { content: "\EA42";}
+.vicon-request-add:before { content: "\EA43";}
+.vicon-request-delete:before { content: "\EA44";}
+.vicon-request-ok:before { content: "\EA45";}
+.vicon-request:before { content: "\EA46";}
+.vicon-save:before { content: "\EA47";}
+.vicon-saved:before { content: "\EA48";}
+.vicon-search-plus:before { content: "\EA49";}
+.vicon-search-catalog:before { content: "\EA4A";}
+.vicon-search:before { content: "\EA4B";}
+.vicon-settings:before { content: "\EA4C";}
+.vicon-share:before { content: "\EA4D";}
+.vicon-speech:before { content: "\EA4E";}
+.vicon-star:before { content: "\EA4F";}
+.vicon-stream:before { content: "\EA50";}
+.vicon-school:before { content: "\EA51";}
+.vicon-tag:before { content: "\EA52";}
+.vicon-target:before { content: "\EA53";}
+.vicon-tianji:before { content: "\EA54";}
+.vicon-tie:before { content: "\EA55";}
+.vicon-time:before { content: "\EA56";}
+.vicon-tools:before { content: "\EA57";}
+.vicon-trust:before { content: "\EA58";}
+.vicon-twitter:before { content: "\EA59";}
+.vicon-upload:before { content: "\EA5A";}
+.vicon-viadeo:before { content: "\EA5B";}
+.vicon-media:before { content: "\EA5C";}
+.vicon-visibility:before { content: "\EA5D";}
+.vicon-visit:before { content: "\EA5E";}
+.vicon-warning:before { content: "\EA5F";}
+.vicon-plus-alt:before { content: "\EA60";}
+.vicon-notification-alt:before { content: "\EA61";}
+
+
+$vicons: (
     notification: '\EA01',
     archive: '\EA02',
     down-alt: '\EA03',
@@ -124,11 +223,3 @@ $icons: (
     plus-alt: '\EA60',
     notification-alt: '\EA61'
 );
-
-
-
-@each $name, $icon in $icons {
-    .vicon-#{$name}:before {
-        content: $icon;
-    }
-}
