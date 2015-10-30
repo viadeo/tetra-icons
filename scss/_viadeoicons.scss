@@ -5,11 +5,11 @@ $font-name: 'viadeoicons' !default;
     font-family: 'viadeoicons';
     font-weight: normal;
     font-style: normal;
-    src: url($font-path + $font-name + '.eot');
-    src: url($font-path + $font-name + '.woff2') format('woff2'),
-         url($font-path + $font-name + '.woff') format('woff'),
-         url($font-path + $font-name + '.ttf') format('truetype'),
-         url($font-path + $font-name + '.eot?#iefix') format('embedded-opentype');
+    src: url($font-path + 'viadeoicons.eot');
+    src: url($font-path + 'viadeoicons.woff2') format('woff2'),
+         url($font-path + 'viadeoicons.woff') format('woff'),
+         url($font-path + 'viadeoicons.ttf') format('truetype'),
+         url($font-path + 'viadeoicons.eot?#iefix') format('embedded-opentype');
 }
 
 .vicon[class^="vicon-"],
