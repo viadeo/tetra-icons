@@ -264,7 +264,8 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"], input[type="reset"],
+html input[type="button"],
+input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -397,8 +398,8 @@ th {
   font-family: "viadeoicons";
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/viadeoicons.eot?v=1446472720");
-  src: url("../fonts/viadeoicons.woff2?v=1446472720") format("woff2"), url("../fonts/viadeoicons.woff?v=1446472720") format("woff"), url("../fonts/viadeoicons.ttf?v=1446472720") format("truetype"), url("../fonts/viadeoicons.eot?v=1446472720#iefix") format("embedded-opentype");
+  src: url("../fonts/viadeoicons.eot?v=1446473458");
+  src: url("../fonts/viadeoicons.woff2?v=1446473458") format("woff2"), url("../fonts/viadeoicons.woff?v=1446473458") format("woff"), url("../fonts/viadeoicons.ttf?v=1446473458") format("truetype"), url("../fonts/viadeoicons.eot?v=1446473458#iefix") format("embedded-opentype");
 }
 
 .vicon[class^="vicon-"],
@@ -812,6 +813,10 @@ th {
 
 .vicon-offer:before {
   content: "\EA64";
+}
+
+.vicon-add:before {
+  content: "\EA65";
 }
 
 body {
