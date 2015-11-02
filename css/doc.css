@@ -394,11 +394,11 @@ th {
 }
 
 @font-face {
-  font-family: 'viadeoicons';
+  font-family: "viadeoicons";
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/viadeoicons.eot");
-  src: url("../fonts/viadeoicons.woff2") format("woff2"), url("../fonts/viadeoicons.woff") format("woff"), url("../fonts/viadeoicons.ttf") format("truetype"), url("../fonts/viadeoicons.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/viadeoicons.eot?v=1446472720");
+  src: url("../fonts/viadeoicons.woff2?v=1446472720") format("woff2"), url("../fonts/viadeoicons.woff?v=1446472720") format("woff"), url("../fonts/viadeoicons.ttf?v=1446472720") format("truetype"), url("../fonts/viadeoicons.eot?v=1446472720#iefix") format("embedded-opentype");
 }
 
 .vicon[class^="vicon-"],
@@ -666,7 +666,7 @@ th {
   content: "\EA3F";
 }
 
-.vicon-profil:before {
+.vicon-profile:before {
   content: "\EA40";
 }
 
@@ -800,6 +800,18 @@ th {
 
 .vicon-notification-alt:before {
   content: "\EA61";
+}
+
+.vicon-catalog:before {
+  content: "\EA62";
+}
+
+.vicon-date:before {
+  content: "\EA63";
+}
+
+.vicon-offer:before {
+  content: "\EA64";
 }
 
 body {
