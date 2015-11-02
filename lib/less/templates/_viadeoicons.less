@@ -1,12 +1,12 @@
 @font-face {
-    font-family: '<%= fontName %>';
+    font-family: @font-name;
     font-weight: normal;
     font-style: normal;
-    src: url('@{font-path}viadeoicons.eot');
-    src: url('@{font-path}viadeoicons.woff2') format('woff2'),
-         url('@{font-path}viadeoicons.woff') format('woff'),
-         url('@{font-path}viadeoicons.ttf') format('truetype'),
-         url('@{font-path}viadeoicons.eot?#iefix') format('embedded-opentype');
+    src: url('@{font-path}viadeoicons.eot?v=<%= timestamp %>');
+    src: url('@{font-path}viadeoicons.woff2?v=<%= timestamp %>') format('woff2'),
+         url('@{font-path}viadeoicons.woff?v=<%= timestamp %>') format('woff'),
+         url('@{font-path}viadeoicons.ttf?v=<%= timestamp %>') format('truetype'),
+         url('@{font-path}viadeoicons.eot?v=<%= timestamp %>#iefix') format('embedded-opentype');
 }
 
 .<%= className %>[class^="<%= className %>-"],

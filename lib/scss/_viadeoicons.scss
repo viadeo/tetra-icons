@@ -2,14 +2,14 @@ $font-path: '../fonts/' !default;
 $font-name: 'viadeoicons' !default;
 
 @font-face {
-    font-family: 'viadeoicons';
+    font-family: $font-name;
     font-weight: normal;
     font-style: normal;
-    src: url($font-path + 'viadeoicons.eot');
-    src: url($font-path + 'viadeoicons.woff2') format('woff2'),
-         url($font-path + 'viadeoicons.woff') format('woff'),
-         url($font-path + 'viadeoicons.ttf') format('truetype'),
-         url($font-path + 'viadeoicons.eot?#iefix') format('embedded-opentype');
+    src: url($font-path + 'viadeoicons.eot?v=1446472720');
+    src: url($font-path + 'viadeoicons.woff2?v=1446472720') format('woff2'),
+         url($font-path + 'viadeoicons.woff?v=1446472720') format('woff'),
+         url($font-path + 'viadeoicons.ttf?v=1446472720') format('truetype'),
+         url($font-path + 'viadeoicons.eot?v=1446472720#iefix') format('embedded-opentype');
 }
 
 .vicon[class^="vicon-"],
@@ -88,7 +88,7 @@ $font-name: 'viadeoicons' !default;
 .vicon-plus:before { content: "\EA3D";}
 .vicon-premium:before { content: "\EA3E";}
 .vicon-print:before { content: "\EA3F";}
-.vicon-profil:before { content: "\EA40";}
+.vicon-profile:before { content: "\EA40";}
 .vicon-recommand:before { content: "\EA41";}
 .vicon-reload:before { content: "\EA42";}
 .vicon-request-add:before { content: "\EA43";}
@@ -122,6 +122,9 @@ $font-name: 'viadeoicons' !default;
 .vicon-warning:before { content: "\EA5F";}
 .vicon-plus-alt:before { content: "\EA60";}
 .vicon-notification-alt:before { content: "\EA61";}
+.vicon-catalog:before { content: "\EA62";}
+.vicon-date:before { content: "\EA63";}
+.vicon-offer:before { content: "\EA64";}
 
 
 $vicons: (
@@ -188,7 +191,7 @@ $vicons: (
     plus: '\EA3D',
     premium: '\EA3E',
     print: '\EA3F',
-    profil: '\EA40',
+    profile: '\EA40',
     recommand: '\EA41',
     reload: '\EA42',
     request-add: '\EA43',
@@ -221,5 +224,8 @@ $vicons: (
     visit: '\EA5E',
     warning: '\EA5F',
     plus-alt: '\EA60',
-    notification-alt: '\EA61'
+    notification-alt: '\EA61',
+    catalog: '\EA62',
+    date: '\EA63',
+    offer: '\EA64'
 );

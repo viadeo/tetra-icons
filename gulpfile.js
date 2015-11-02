@@ -56,6 +56,7 @@ gulp.task('iconfont', function () {
         , fontName: FONT.name
         , fontPath: FONT.path
         , className: FONT.className
+        , timestamp: Math.round(Date.now()/1000)
       };
       gulp.src('lib/scss/templates/*.scss')
         .pipe(consolidate('lodash', templateParams))
