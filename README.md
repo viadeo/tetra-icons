@@ -23,7 +23,7 @@ Leave the rest unchecked.
 
 ## Generating WebFonts
 
-All new `.svg` icon must be inside the `icons` folder with the file name pattern `iconname.svg`.
+All new `.svg` icon must be inside the `lib/icons` folder with the file name pattern `iconname.svg`.
 
 1. Generate webFont via the cmd : `npm run generate`
 2. Check the webFont `open dist/index.html`
