@@ -5,11 +5,11 @@ $font-name: 'viadeoicons' !default;
     font-family: $font-name;
     font-weight: normal;
     font-style: normal;
-    src: url($font-path + 'viadeoicons.eot?v=1446473458');
-    src: url($font-path + 'viadeoicons.woff2?v=1446473458') format('woff2'),
-         url($font-path + 'viadeoicons.woff?v=1446473458') format('woff'),
-         url($font-path + 'viadeoicons.ttf?v=1446473458') format('truetype'),
-         url($font-path + 'viadeoicons.eot?v=1446473458#iefix') format('embedded-opentype');
+    src: url($font-path + 'viadeoicons.eot?v=1446542585');
+    src: url($font-path + 'viadeoicons.woff2?v=1446542585') format('woff2'),
+         url($font-path + 'viadeoicons.woff?v=1446542585') format('woff'),
+         url($font-path + 'viadeoicons.ttf?v=1446542585') format('truetype'),
+         url($font-path + 'viadeoicons.eot?v=1446542585#iefix') format('embedded-opentype');
 }
 
 .vicon[class^="vicon-"],
@@ -126,6 +126,8 @@ $font-name: 'viadeoicons' !default;
 .vicon-date:before { content: "\EA63";}
 .vicon-offer:before { content: "\EA64";}
 .vicon-add:before { content: "\EA65";}
+.vicon-question-alt:before { content: "\EA66";}
+.vicon-question:before { content: "\EA67";}
 
 
 $vicons: (
@@ -229,5 +231,7 @@ $vicons: (
     catalog: '\EA62',
     date: '\EA63',
     offer: '\EA64',
-    add: '\EA65'
+    add: '\EA65',
+    question-alt: '\EA66',
+    question: '\EA67'
 );
