@@ -398,8 +398,8 @@ th {
   font-family: "viadeoicons";
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/viadeoicons.eot?v=1446473458");
-  src: url("../fonts/viadeoicons.woff2?v=1446473458") format("woff2"), url("../fonts/viadeoicons.woff?v=1446473458") format("woff"), url("../fonts/viadeoicons.ttf?v=1446473458") format("truetype"), url("../fonts/viadeoicons.eot?v=1446473458#iefix") format("embedded-opentype");
+  src: url("../fonts/viadeoicons.eot?v=1446542585");
+  src: url("../fonts/viadeoicons.woff2?v=1446542585") format("woff2"), url("../fonts/viadeoicons.woff?v=1446542585") format("woff"), url("../fonts/viadeoicons.ttf?v=1446542585") format("truetype"), url("../fonts/viadeoicons.eot?v=1446542585#iefix") format("embedded-opentype");
 }
 
 .vicon[class^="vicon-"],
@@ -817,6 +817,14 @@ th {
 
 .vicon-add:before {
   content: "\EA65";
+}
+
+.vicon-question-alt:before {
+  content: "\EA66";
+}
+
+.vicon-question:before {
+  content: "\EA67";
 }
 
 body {
