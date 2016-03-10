@@ -5,11 +5,11 @@ $font-name: 'viadeoicons' !default;
     font-family: $font-name;
     font-weight: normal;
     font-style: normal;
-    src: url($font-path + 'viadeoicons.eot?v=1446542585');
-    src: url($font-path + 'viadeoicons.woff2?v=1446542585') format('woff2'),
-         url($font-path + 'viadeoicons.woff?v=1446542585') format('woff'),
-         url($font-path + 'viadeoicons.ttf?v=1446542585') format('truetype'),
-         url($font-path + 'viadeoicons.eot?v=1446542585#iefix') format('embedded-opentype');
+    src: url($font-path + 'viadeoicons.eot?v=1457621258');
+    src: url($font-path + 'viadeoicons.woff2?v=1457621258') format('woff2'),
+         url($font-path + 'viadeoicons.woff?v=1457621258') format('woff'),
+         url($font-path + 'viadeoicons.ttf?v=1457621258') format('truetype'),
+         url($font-path + 'viadeoicons.eot?v=1457621258#iefix') format('embedded-opentype');
 }
 
 .vicon[class^="vicon-"],
@@ -25,213 +25,209 @@ $font-name: 'viadeoicons' !default;
     text-transform: none;
 }
 
-.vicon-notification:before { content: "\EA01";}
-.vicon-archive:before { content: "\EA02";}
-.vicon-down-alt:before { content: "\EA03";}
-.vicon-down:before { content: "\EA04";}
-.vicon-first:before { content: "\EA05";}
-.vicon-last:before { content: "\EA06";}
-.vicon-left-alt:before { content: "\EA07";}
-.vicon-prev:before { content: "\EA08";}
-.vicon-right-alt:before { content: "\EA09";}
-.vicon-next:before { content: "\EA0A";}
-.vicon-select:before { content: "\EA0B";}
-.vicon-up-alt:before { content: "\EA0C";}
-.vicon-up:before { content: "\EA0D";}
-.vicon-article:before { content: "\EA0E";}
-.vicon-book:before { content: "\EA0F";}
-.vicon-bubble:before { content: "\EA10";}
-.vicon-bubbles:before { content: "\EA11";}
-.vicon-calendar-1:before { content: "\EA12";}
-.vicon-calendar-30:before { content: "\EA13";}
-.vicon-calendar:before { content: "\EA14";}
-.vicon-checkmark:before { content: "\EA15";}
-.vicon-remove:before { content: "\EA16";}
-.vicon-company-add:before { content: "\EA17";}
+.vicon-alert-notif-alt:before { content: "\EA01";}
+.vicon-alert-notif:before { content: "\EA02";}
+.vicon-archive:before { content: "\EA03";}
+.vicon-arrow-down:before { content: "\EA05";}
+.vicon-arrow-down-alt:before { content: "\EA04";}
+.vicon-arrow-left-alt:before { content: "\EA08";}
+.vicon-arrow-first:before { content: "\EA06";}
+.vicon-arrow-last:before { content: "\EA07";}
+.vicon-arrow-left:before { content: "\EA09";}
+.vicon-arrow-select:before { content: "\EA0C";}
+.vicon-arrow-right-alt:before { content: "\EA0A";}
+.vicon-arrow-right:before { content: "\EA0B";}
+.vicon-arrow-up-alt:before { content: "\EA0D";}
+.vicon-arrow-up:before { content: "\EA0E";}
+.vicon-article:before { content: "\EA0F";}
+.vicon-bubble:before { content: "\EA11";}
+.vicon-bubbles:before { content: "\EA12";}
+.vicon-book:before { content: "\EA10";}
+.vicon-calendar-1:before { content: "\EA13";}
+.vicon-calendar-30:before { content: "\EA14";}
+.vicon-calendar:before { content: "\EA15";}
+.vicon-check:before { content: "\EA16";}
+.vicon-close:before { content: "\EA17";}
+.vicon-contact-sync:before { content: "\EA19";}
 .vicon-company:before { content: "\EA18";}
-.vicon-contract:before { content: "\EA19";}
-.vicon-data:before { content: "\EA1A";}
-.vicon-degree-like:before { content: "\EA1B";}
-.vicon-degree-ok:before { content: "\EA1C";}
-.vicon-degree:before { content: "\EA1D";}
-.vicon-device-computer:before { content: "\EA1E";}
-.vicon-device-phone:before { content: "\EA1F";}
-.vicon-device-tablette:before { content: "\EA20";}
-.vicon-download:before { content: "\EA21";}
-.vicon-edit:before { content: "\EA22";}
-.vicon-euro:before { content: "\EA23";}
-.vicon-export:before { content: "\EA24";}
-.vicon-facebook:before { content: "\EA25";}
-.vicon-female-1:before { content: "\EA26";}
-.vicon-female-2:before { content: "\EA27";}
-.vicon-blog:before { content: "\EA28";}
-.vicon-googleplus:before { content: "\EA29";}
-.vicon-graph:before { content: "\EA2A";}
-.vicon-group:before { content: "\EA2B";}
-.vicon-home:before { content: "\EA2C";}
-.vicon-bulb:before { content: "\EA2D";}
-.vicon-information:before { content: "\EA2E";}
-.vicon-experience:before { content: "\EA2F";}
-.vicon-key:before { content: "\EA30";}
-.vicon-infinity:before { content: "\EA31";}
+.vicon-contract:before { content: "\EA1A";}
+.vicon-degree-like:before { content: "\EA1C";}
+.vicon-degree-ok:before { content: "\EA1D";}
+.vicon-degree:before { content: "\EA1E";}
+.vicon-data:before { content: "\EA1B";}
+.vicon-delete:before { content: "\EA1F";}
+.vicon-device-phone:before { content: "\EA21";}
+.vicon-device-tablette:before { content: "\EA22";}
+.vicon-device-computer:before { content: "\EA20";}
+.vicon-edit:before { content: "\EA24";}
+.vicon-download:before { content: "\EA23";}
+.vicon-export:before { content: "\EA27";}
+.vicon-experience:before { content: "\EA26";}
+.vicon-facebook:before { content: "\EA28";}
+.vicon-euro:before { content: "\EA25";}
+.vicon-forum:before { content: "\EA29";}
+.vicon-gplus:before { content: "\EA2A";}
+.vicon-graph:before { content: "\EA2B";}
+.vicon-group:before { content: "\EA2C";}
+.vicon-idea:before { content: "\EA2E";}
+.vicon-home:before { content: "\EA2D";}
+.vicon-information:before { content: "\EA2F";}
+.vicon-job:before { content: "\EA30";}
+.vicon-key:before { content: "\EA31";}
 .vicon-like:before { content: "\EA32";}
 .vicon-link:before { content: "\EA33";}
 .vicon-location:before { content: "\EA34";}
-.vicon-message:before { content: "\EA35";}
-.vicon-male-1:before { content: "\EA36";}
-.vicon-male-2:before { content: "\EA37";}
-.vicon-money:before { content: "\EA38";}
-.vicon-network:before { content: "\EA39";}
-.vicon-bell:before { content: "\EA3A";}
-.vicon-phone:before { content: "\EA3B";}
-.vicon-photo:before { content: "\EA3C";}
+.vicon-mail-open:before { content: "\EA35";}
+.vicon-mail:before { content: "\EA36";}
+.vicon-money:before { content: "\EA37";}
+.vicon-network:before { content: "\EA38";}
+.vicon-notification:before { content: "\EA39";}
+.vicon-phone:before { content: "\EA3A";}
+.vicon-photo:before { content: "\EA3B";}
+.vicon-plus-alt:before { content: "\EA3C";}
 .vicon-plus:before { content: "\EA3D";}
 .vicon-premium:before { content: "\EA3E";}
 .vicon-print:before { content: "\EA3F";}
 .vicon-profile:before { content: "\EA40";}
-.vicon-recommand:before { content: "\EA41";}
-.vicon-reload:before { content: "\EA42";}
-.vicon-request-add:before { content: "\EA43";}
-.vicon-request-delete:before { content: "\EA44";}
-.vicon-request-ok:before { content: "\EA45";}
-.vicon-request:before { content: "\EA46";}
-.vicon-save:before { content: "\EA47";}
-.vicon-saved:before { content: "\EA48";}
-.vicon-search-plus:before { content: "\EA49";}
-.vicon-search-catalog:before { content: "\EA4A";}
-.vicon-search:before { content: "\EA4B";}
-.vicon-settings:before { content: "\EA4C";}
-.vicon-share:before { content: "\EA4D";}
-.vicon-speech:before { content: "\EA4E";}
-.vicon-star:before { content: "\EA4F";}
-.vicon-stream:before { content: "\EA50";}
-.vicon-school:before { content: "\EA51";}
-.vicon-tag:before { content: "\EA52";}
-.vicon-target:before { content: "\EA53";}
-.vicon-tianji:before { content: "\EA54";}
-.vicon-tie:before { content: "\EA55";}
-.vicon-time:before { content: "\EA56";}
-.vicon-tools:before { content: "\EA57";}
-.vicon-trust:before { content: "\EA58";}
-.vicon-twitter:before { content: "\EA59";}
-.vicon-upload:before { content: "\EA5A";}
-.vicon-viadeo:before { content: "\EA5B";}
-.vicon-media:before { content: "\EA5C";}
-.vicon-visibility:before { content: "\EA5D";}
-.vicon-visit:before { content: "\EA5E";}
-.vicon-warning:before { content: "\EA5F";}
-.vicon-plus-alt:before { content: "\EA60";}
-.vicon-notification-alt:before { content: "\EA61";}
-.vicon-catalog:before { content: "\EA62";}
-.vicon-date:before { content: "\EA63";}
-.vicon-offer:before { content: "\EA64";}
-.vicon-add:before { content: "\EA65";}
-.vicon-question-alt:before { content: "\EA66";}
-.vicon-question:before { content: "\EA67";}
+.vicon-question-alt:before { content: "\EA41";}
+.vicon-question:before { content: "\EA42";}
+.vicon-recommand:before { content: "\EA43";}
+.vicon-reload:before { content: "\EA44";}
+.vicon-request-add:before { content: "\EA45";}
+.vicon-request-delete:before { content: "\EA46";}
+.vicon-request-ok:before { content: "\EA47";}
+.vicon-request:before { content: "\EA48";}
+.vicon-responsive:before { content: "\EA49";}
+.vicon-save:before { content: "\EA4A";}
+.vicon-saved:before { content: "\EA4B";}
+.vicon-search-alt:before { content: "\EA4C";}
+.vicon-search-catalog:before { content: "\EA4D";}
+.vicon-search:before { content: "\EA4E";}
+.vicon-secure-off:before { content: "\EA4F";}
+.vicon-secure-on:before { content: "\EA50";}
+.vicon-settings:before { content: "\EA51";}
+.vicon-share:before { content: "\EA52";}
+.vicon-speech:before { content: "\EA53";}
+.vicon-star-alt:before { content: "\EA54";}
+.vicon-star:before { content: "\EA55";}
+.vicon-stats:before { content: "\EA56";}
+.vicon-study:before { content: "\EA57";}
+.vicon-tag:before { content: "\EA58";}
+.vicon-target:before { content: "\EA59";}
+.vicon-tie:before { content: "\EA5A";}
+.vicon-time:before { content: "\EA5B";}
+.vicon-tools:before { content: "\EA5C";}
+.vicon-trophee:before { content: "\EA5D";}
+.vicon-trust:before { content: "\EA5E";}
+.vicon-twitter:before { content: "\EA5F";}
+.vicon-upload:before { content: "\EA60";}
+.vicon-viadeo:before { content: "\EA61";}
+.vicon-video:before { content: "\EA62";}
+.vicon-visibility:before { content: "\EA63";}
+.vicon-visit:before { content: "\EA64";}
+.vicon-warning:before { content: "\EA65";}
 
 
 $vicons: (
-    notification: '\EA01',
-    archive: '\EA02',
-    down-alt: '\EA03',
-    down: '\EA04',
-    first: '\EA05',
-    last: '\EA06',
-    left-alt: '\EA07',
-    prev: '\EA08',
-    right-alt: '\EA09',
-    next: '\EA0A',
-    select: '\EA0B',
-    up-alt: '\EA0C',
-    up: '\EA0D',
-    article: '\EA0E',
-    book: '\EA0F',
-    bubble: '\EA10',
-    bubbles: '\EA11',
-    calendar-1: '\EA12',
-    calendar-30: '\EA13',
-    calendar: '\EA14',
-    checkmark: '\EA15',
-    remove: '\EA16',
-    company-add: '\EA17',
+    alert-notif-alt: '\EA01',
+    alert-notif: '\EA02',
+    archive: '\EA03',
+    arrow-down: '\EA05',
+    arrow-down-alt: '\EA04',
+    arrow-left-alt: '\EA08',
+    arrow-first: '\EA06',
+    arrow-last: '\EA07',
+    arrow-left: '\EA09',
+    arrow-select: '\EA0C',
+    arrow-right-alt: '\EA0A',
+    arrow-right: '\EA0B',
+    arrow-up-alt: '\EA0D',
+    arrow-up: '\EA0E',
+    article: '\EA0F',
+    bubble: '\EA11',
+    bubbles: '\EA12',
+    book: '\EA10',
+    calendar-1: '\EA13',
+    calendar-30: '\EA14',
+    calendar: '\EA15',
+    check: '\EA16',
+    close: '\EA17',
+    contact-sync: '\EA19',
     company: '\EA18',
-    contract: '\EA19',
-    data: '\EA1A',
-    degree-like: '\EA1B',
-    degree-ok: '\EA1C',
-    degree: '\EA1D',
-    device-computer: '\EA1E',
-    device-phone: '\EA1F',
-    device-tablette: '\EA20',
-    download: '\EA21',
-    edit: '\EA22',
-    euro: '\EA23',
-    export: '\EA24',
-    facebook: '\EA25',
-    female-1: '\EA26',
-    female-2: '\EA27',
-    blog: '\EA28',
-    googleplus: '\EA29',
-    graph: '\EA2A',
-    group: '\EA2B',
-    home: '\EA2C',
-    bulb: '\EA2D',
-    information: '\EA2E',
-    experience: '\EA2F',
-    key: '\EA30',
-    infinity: '\EA31',
+    contract: '\EA1A',
+    degree-like: '\EA1C',
+    degree-ok: '\EA1D',
+    degree: '\EA1E',
+    data: '\EA1B',
+    delete: '\EA1F',
+    device-phone: '\EA21',
+    device-tablette: '\EA22',
+    device-computer: '\EA20',
+    edit: '\EA24',
+    download: '\EA23',
+    export: '\EA27',
+    experience: '\EA26',
+    facebook: '\EA28',
+    euro: '\EA25',
+    forum: '\EA29',
+    gplus: '\EA2A',
+    graph: '\EA2B',
+    group: '\EA2C',
+    idea: '\EA2E',
+    home: '\EA2D',
+    information: '\EA2F',
+    job: '\EA30',
+    key: '\EA31',
     like: '\EA32',
     link: '\EA33',
     location: '\EA34',
-    message: '\EA35',
-    male-1: '\EA36',
-    male-2: '\EA37',
-    money: '\EA38',
-    network: '\EA39',
-    bell: '\EA3A',
-    phone: '\EA3B',
-    photo: '\EA3C',
+    mail-open: '\EA35',
+    mail: '\EA36',
+    money: '\EA37',
+    network: '\EA38',
+    notification: '\EA39',
+    phone: '\EA3A',
+    photo: '\EA3B',
+    plus-alt: '\EA3C',
     plus: '\EA3D',
     premium: '\EA3E',
     print: '\EA3F',
     profile: '\EA40',
-    recommand: '\EA41',
-    reload: '\EA42',
-    request-add: '\EA43',
-    request-delete: '\EA44',
-    request-ok: '\EA45',
-    request: '\EA46',
-    save: '\EA47',
-    saved: '\EA48',
-    search-plus: '\EA49',
-    search-catalog: '\EA4A',
-    search: '\EA4B',
-    settings: '\EA4C',
-    share: '\EA4D',
-    speech: '\EA4E',
-    star: '\EA4F',
-    stream: '\EA50',
-    school: '\EA51',
-    tag: '\EA52',
-    target: '\EA53',
-    tianji: '\EA54',
-    tie: '\EA55',
-    time: '\EA56',
-    tools: '\EA57',
-    trust: '\EA58',
-    twitter: '\EA59',
-    upload: '\EA5A',
-    viadeo: '\EA5B',
-    media: '\EA5C',
-    visibility: '\EA5D',
-    visit: '\EA5E',
-    warning: '\EA5F',
-    plus-alt: '\EA60',
-    notification-alt: '\EA61',
-    catalog: '\EA62',
-    date: '\EA63',
-    offer: '\EA64',
-    add: '\EA65',
-    question-alt: '\EA66',
-    question: '\EA67'
+    question-alt: '\EA41',
+    question: '\EA42',
+    recommand: '\EA43',
+    reload: '\EA44',
+    request-add: '\EA45',
+    request-delete: '\EA46',
+    request-ok: '\EA47',
+    request: '\EA48',
+    responsive: '\EA49',
+    save: '\EA4A',
+    saved: '\EA4B',
+    search-alt: '\EA4C',
+    search-catalog: '\EA4D',
+    search: '\EA4E',
+    secure-off: '\EA4F',
+    secure-on: '\EA50',
+    settings: '\EA51',
+    share: '\EA52',
+    speech: '\EA53',
+    star-alt: '\EA54',
+    star: '\EA55',
+    stats: '\EA56',
+    study: '\EA57',
+    tag: '\EA58',
+    target: '\EA59',
+    tie: '\EA5A',
+    time: '\EA5B',
+    tools: '\EA5C',
+    trophee: '\EA5D',
+    trust: '\EA5E',
+    twitter: '\EA5F',
+    upload: '\EA60',
+    viadeo: '\EA61',
+    video: '\EA62',
+    visibility: '\EA63',
+    visit: '\EA64',
+    warning: '\EA65'
 );
