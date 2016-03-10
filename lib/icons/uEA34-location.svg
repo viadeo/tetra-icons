@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
-<g id="Your_Icon">
-	<g>
-		<path d="M250.2,495.7c0,0.1,0.1,0.3,0.1,0.3s158.4-243.1,158.4-323C408.8,55.4,328.5,4.2,250.2,4C171.9,4.2,91.7,55.4,91.7,173
-			c0,79.9,158.4,323,158.4,323S250.2,495.8,250.2,495.7z M195.3,166.3c0-30.4,24.6-54.9,54.9-54.9c30.4,0,54.9,24.6,54.9,54.9
-			c0,30.3-24.6,54.9-54.9,54.9C219.9,221.2,195.3,196.7,195.3,166.3z"/>
-	</g>
-</g>
-<text transform="matrix(1.0942 0 0 1 24.8271 1015.6634)" font-family="'OpenSans-Bold'" font-size="678.6436px">€</text>
+<path d="M250-0.3c-96.8,0-175,78.2-175,175c0,131.2,175,325,175,325s175-193.7,175-325C425,77.9,346.8-0.3,250-0.3z M250,237.1
+	c-34.5,0-62.5-28-62.5-62.5s28-62.5,62.5-62.5s62.5,28,62.5,62.5S284.5,237.1,250,237.1z"/>
 </svg>
