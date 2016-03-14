@@ -25,7 +25,8 @@
     "gulp-consolidate": "^0.1.2",
     "gulp-iconfont": "^3.0.2",
     "gulp-sass": "^2.0.2",
-    "lodash": "^3.9.3"
+    "lodash": "^3.9.3",
+    "run-sequence": "^1.1.5"
   },
   "scripts": {
     "generate": "gulp clean && gulp iconfont && gulp sass",
