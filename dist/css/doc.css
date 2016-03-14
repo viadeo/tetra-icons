@@ -398,8 +398,8 @@ th {
   font-family: "viadeoicons";
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/viadeoicons.eot?v=1457621258");
-  src: url("../fonts/viadeoicons.woff2?v=1457621258") format("woff2"), url("../fonts/viadeoicons.woff?v=1457621258") format("woff"), url("../fonts/viadeoicons.ttf?v=1457621258") format("truetype"), url("../fonts/viadeoicons.eot?v=1457621258#iefix") format("embedded-opentype");
+  src: url("../fonts/viadeoicons.eot?v=1457951622");
+  src: url("../fonts/viadeoicons.woff2?v=1457951622") format("woff2"), url("../fonts/viadeoicons.woff?v=1457951622") format("woff"), url("../fonts/viadeoicons.ttf?v=1457951622") format("truetype"), url("../fonts/viadeoicons.eot?v=1457951622#iefix") format("embedded-opentype");
 }
 
 .vicon[class^="vicon-"],
@@ -427,16 +427,12 @@ th {
   content: "\EA03";
 }
 
-.vicon-arrow-down:before {
-  content: "\EA05";
-}
-
 .vicon-arrow-down-alt:before {
   content: "\EA04";
 }
 
-.vicon-arrow-left-alt:before {
-  content: "\EA08";
+.vicon-arrow-down:before {
+  content: "\EA05";
 }
 
 .vicon-arrow-first:before {
@@ -447,12 +443,12 @@ th {
   content: "\EA07";
 }
 
-.vicon-arrow-left:before {
-  content: "\EA09";
+.vicon-arrow-left-alt:before {
+  content: "\EA08";
 }
 
-.vicon-arrow-select:before {
-  content: "\EA0C";
+.vicon-arrow-left:before {
+  content: "\EA09";
 }
 
 .vicon-arrow-right-alt:before {
@@ -461,6 +457,10 @@ th {
 
 .vicon-arrow-right:before {
   content: "\EA0B";
+}
+
+.vicon-arrow-select:before {
+  content: "\EA0C";
 }
 
 .vicon-arrow-up-alt:before {
@@ -475,16 +475,16 @@ th {
   content: "\EA0F";
 }
 
+.vicon-book:before {
+  content: "\EA10";
+}
+
 .vicon-bubble:before {
   content: "\EA11";
 }
 
 .vicon-bubbles:before {
   content: "\EA12";
-}
-
-.vicon-book:before {
-  content: "\EA10";
 }
 
 .vicon-calendar-1:before {
@@ -507,16 +507,20 @@ th {
   content: "\EA17";
 }
 
-.vicon-contact-sync:before {
-  content: "\EA19";
-}
-
 .vicon-company:before {
   content: "\EA18";
 }
 
+.vicon-contact-sync:before {
+  content: "\EA19";
+}
+
 .vicon-contract:before {
   content: "\EA1A";
+}
+
+.vicon-data:before {
+  content: "\EA1B";
 }
 
 .vicon-degree-like:before {
@@ -531,12 +535,12 @@ th {
   content: "\EA1E";
 }
 
-.vicon-data:before {
-  content: "\EA1B";
-}
-
 .vicon-delete:before {
   content: "\EA1F";
+}
+
+.vicon-device-computer:before {
+  content: "\EA20";
 }
 
 .vicon-device-phone:before {
@@ -547,32 +551,28 @@ th {
   content: "\EA22";
 }
 
-.vicon-device-computer:before {
-  content: "\EA20";
+.vicon-download:before {
+  content: "\EA23";
 }
 
 .vicon-edit:before {
   content: "\EA24";
 }
 
-.vicon-download:before {
-  content: "\EA23";
-}
-
-.vicon-export:before {
-  content: "\EA27";
+.vicon-euro:before {
+  content: "\EA25";
 }
 
 .vicon-experience:before {
   content: "\EA26";
 }
 
-.vicon-facebook:before {
-  content: "\EA28";
+.vicon-export:before {
+  content: "\EA27";
 }
 
-.vicon-euro:before {
-  content: "\EA25";
+.vicon-facebook:before {
+  content: "\EA28";
 }
 
 .vicon-forum:before {
@@ -591,12 +591,12 @@ th {
   content: "\EA2C";
 }
 
-.vicon-idea:before {
-  content: "\EA2E";
-}
-
 .vicon-home:before {
   content: "\EA2D";
+}
+
+.vicon-idea:before {
+  content: "\EA2E";
 }
 
 .vicon-information:before {
@@ -817,6 +817,10 @@ th {
 
 .vicon-warning:before {
   content: "\EA65";
+}
+
+.vicon-infinity:before {
+  content: "\EA66";
 }
 
 body {
