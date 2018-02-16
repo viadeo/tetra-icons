@@ -398,8 +398,8 @@ th {
   font-family: "viadeoicons";
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/viadeoicons.eot?v=1461837198");
-  src: url("../fonts/viadeoicons.woff2?v=1461837198") format("woff2"), url("../fonts/viadeoicons.woff?v=1461837198") format("woff"), url("../fonts/viadeoicons.ttf?v=1461837198") format("truetype"), url("../fonts/viadeoicons.eot?v=1461837198#iefix") format("embedded-opentype");
+  src: url("../fonts/viadeoicons.eot?v=1518787807");
+  src: url("../fonts/viadeoicons.woff2?v=1518787807") format("woff2"), url("../fonts/viadeoicons.woff?v=1518787807") format("woff"), url("../fonts/viadeoicons.ttf?v=1518787807") format("truetype"), url("../fonts/viadeoicons.eot?v=1518787807#iefix") format("embedded-opentype");
 }
 
 .vicon[class^="vicon-"],
@@ -973,6 +973,14 @@ th {
 
 .vicon-checkmark:before {
   content: "\EA8C";
+}
+
+.vicon-flag-new:before {
+  content: "\EA8D";
+}
+
+.vicon-company2:before {
+  content: "\EA8E";
 }
 
 body {
